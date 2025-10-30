@@ -21,11 +21,11 @@ class _AddNoteScreenState extends State<AddNoteScreen> {
 
     final note = Note(
       id: '',
-      type: 'note', // ✅ Changed from 'text' to 'note'
+      type: 'note', // Changed from 'text' to 'note'
       title: titleCtrl.text.trim(),
       content: contentCtrl.text.trim(),
       color: color,
-      listItems: [], // ✅ Added empty list to satisfy model
+      listItems: [], // Added empty list to satisfy model
     );
 
     final ok = await ApiService.createNote(note);
