@@ -8,9 +8,9 @@ class ApiService {
   static const String notesUrl = '$baseUrl/notes';
   static const String authUrl = '$baseUrl/auth';
 
-  // ================================
-  // 🔹 AUTH SECTION
-  // ================================
+
+  // AUTH SECTION
+
 
   static Future<Map<String, dynamic>> login(String email, String password) async {
     try {
@@ -74,9 +74,9 @@ class ApiService {
     await prefs.remove('token');
   }
 
-  // ================================
-  // 🔹 NOTES SECTION
-  // ================================
+
+  // NOTES SECTION
+
 
   static Future<bool> createNote(Note note) async {
     try {
